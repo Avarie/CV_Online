@@ -1,0 +1,28 @@
+﻿@using cv.db
+@model dynamic
+
+@{
+    ViewBag.Title = "Visitors list";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Host</th>
+            <th>Target</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (LogItem l in ViewBag.List)
+        {
+            <tr>
+                <td>@l.Date.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                <td>@(l.Ip == l.Host ? l.Ip : l.Host)</td>
+                <td>@l.Target</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
