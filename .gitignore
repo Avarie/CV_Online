@@ -10,3 +10,12 @@ obj
 packages
 Content
 i18n
+src
+fonts
+esm
+umd
+bootstrap*
+popper*
+index.d.ts
+index.js.flow
+
