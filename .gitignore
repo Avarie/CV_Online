@@ -1,5 +1,12 @@
-/cv/obj/
-/cv/bin/
-/packages/
 /.vs/config/applicationhost.config
-/.vs/cv/v14/.suo
+*.suo
+*.vs
+*.user
+_ReSharper.*
+jquery*.*
+angular-*.*
+bin
+obj
+packages
+Content
+i18n
